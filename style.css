@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(65, 187, 236);
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+#menu ul li {
+    display: inline-table;
+    width: 140px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+}
+#menu ul li a {
+    color: rgb(244, 247, 250);
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+#menu ul li a:hover {
+    background-color: antiquewhite;
+    color: azure;
+}
+#menu ul li > .sub-menu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+}
+#menu ul > li:hover .sub-menu {
+    display: block;
+}
+#wrap {
+    margin: 0;
+    padding: 0;
+}
+.bannera {
+    height: 685px;
+}
+.banner {
+    width: 100%;
+    height: 620px;
+    margin-top: 65.15px;
+    z-index: -2;
+    position: relative;
+}
+@keyframes banner1 {
+    0% {height: 390px;left: 0;opacity: 0.1;}
+    100% {height: 390px;left: 10px;opacity: 1;}
+}
+.banner1 {
+    height: 390px;
+    z-index: 2;
+    position: absolute;
+    top: 150px;
+    opacity: 1;
+    left: 10px;
+    animation: banner1 1s ease-out;
+}
+@keyframes banner2 {
+    0% {top: 30px;opacity: 0.1;}
+    100% {top: 65.15px;opacity: 1;}
+}
+.banner2 {
+    z-index: 2;
+    position: absolute;
+    top: 65.15px;
+    left: 150px;
+    height: 160px;
+    opacity: 1;
+    animation: banner2 1.3s ease-in;
+}
+@keyframes banner3 {
+    0% {top: 30px;opacity: 0.1;}
+    100% {top: 65.15px;opacity: 1;}
+}
+.banner3 {
+    z-index: 2;
+    position: absolute;
+    top: 65.15px;
+    right: 290px;
+    opacity: 1;
+    animation: banner2 1.2s ease-out;
+}
+@keyframes banner4 {
+    0% {top: 450px;opacity: 0.5;}
+    100% {top: 420px;opacity: 1;}
+}
+.banner4 {
+    z-index: -1;
+    position: absolute;
+    top: 420px;
+    left: 80px;
+    animation: banner4 1.4s ease-in;
+    opacity: 1;
+}
+@keyframes banner5 {
+    0% {height: 370px;right: 0;opacity: 0.1;}
+    100% {height: 370px;right: 10px;opacity: 1;}
+}
+.banner5 {
+    z-index: 2;
+    position: absolute;
+    top: 65.15px;
+    right: 10px;
+    height: 370px;
+    opacity: 1;
+    animation: banner5 1.6s ease-in;
+}
+@keyframes banner6 {
+    0% {top: 350px;right: 125px;opacity: 0.1;}
+    100% {top: 285px;right: 125px;opacity: 1;}
+}
+.banner6 {
+    z-index: -1;
+    position: absolute;
+    top: 285px;
+    right: 125px;
+    height: 400px;
+    opacity: 1;
+    animation: banner6 2s ease-out;
+}
+@keyframes banner7 {
+    0% {top: 310px;right: 5px;opacity: 0.1;}
+    100% {top: 270px;right: 10px;opacity: 1;}
+}
+.banner7 {
+    z-index: -1;
+    position: absolute;
+    top: 270px;
+    right: 10px;
+    opacity: 1;
+    animation: banner7 1.8s ease-in;
+}
+@keyframes name {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+.name {
+    position: absolute;
+    opacity: 1;
+    left: 38%;
+    right: 0;
+    top: 310px;
+    z-index: 1;
+    width: 400px;
+    font-size: 51px;
+    color: rgb(221, 236, 248);
+    animation: name 7s ease-in;
+}
+
+#main {
+    background: rgb(245, 243, 243);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+.sibar {
+    margin-top: 1.7em;
+    float: left;
+    width: 23%;
+    background-color: rgb(245, 243, 243);
+    height: 750px;
+}
+.rankfood {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.sibar .rankfood .boder {
+    border: 1px solid burlywood;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(244, 247, 250);
+    margin-bottom: 1.4em;
+    background-color: rgb(65, 187, 236);
+    height: 45px;
+    font-size: 14px;
+}
+.sibar .rankfood ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+.sibar .rankfood ul li {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid burlywood;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sibar .rankfood ul li:hover {
+    background-color: aliceblue;
+}
+.sibar .rankfood ul li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.sibar .rankfood ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sibar .rankfood .khuyenmai {
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: aliceblue;
+    animation: km 3s ease infinite;
+}
+.sibar .khuyenmai h3 {
+     margin-top: 20px;
+}
+@keyframes km {
+    0% {color: rgb(243, 7, 7)}
+    50% {color: rgb(180, 209, 73);background: rgb(95, 141, 182)}
+    100% {color: rgb(151, 57, 170);background: rgb(139, 189, 185)}
+}
+.sibar .rankfood .khuyenmai .km {
+    margin-top: 30px;
+    font-size: 25px;
+}
+.menu {
+    margin-top: 1.7em;
+    float: right;
+    width: 77%;
+    height: 100%;
+    background-color: rgb(245, 243, 243);
+    overflow: auto;
+}
+.menu .rankfood1 {
+    line-height: 45px;
+    height: 45px;
+    border: 1px solid burlywood;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    color: rgb(244, 247, 250);
+    background-color: rgb(65, 187, 236);
+}
+.menu .menucon {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 2em;
+}
+.menu .box {
+    float: left;
+    width: 31.9%;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.menu .box:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.menu .boxa {
+    margin-right: 0;
+}
+.menu .bo {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.menu .box1 {
+    float: left;
+    width: 31.9%;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.menu .box1:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.menu .boxb {
+    margin-right: 0;
+}
+.menu p {
+    text-align: center;
+}
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(55, 100, 117);
+}
+.footer1 {
+    color: aliceblue;
+    padding-top: 1.7em;
+    padding-bottom: 2em;
+    line-height: 25px;
+    padding-left: 6em;
+}

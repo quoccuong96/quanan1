@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(65, 187, 236);
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    margin-top: 0;
+}
+#menu ul li {
+    display: inline-table;
+    width: 140px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+}
+#menu ul li a {
+    color: rgb(244, 247, 250);
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+#menu ul li a:hover {
+    background-color: antiquewhite;
+    color: azure;
+}
+#menu ul li > .sub-menu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+}
+#menu ul > li:hover .sub-menu {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 243, 243);
+}
+img {
+    width: 100%;
+}
+#wrapa {
+    width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+#wrapa .bo {
+    text-align: center;
+    margin-top: 25px;
+    overflow: auto;
+    margin-bottom: 2em;
+}
+#wrapa h2 {
+    margin-top: 85px;
+    text-align: center;
+    border: 1px solid red;
+}
+#wrapa .bo .mon {
+    width: 32%;
+    float: left;
+    margin-right: 1.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#wrapa .bo .mon:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#wrapa .bo .mon1:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#wrapa .bo .mon2:hover {
+    transform: translate(0, -6px);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#wrapa .bo .mona {
+    float: right;
+    margin-right: 0;
+}
+#wrapa .bo .mon1 {
+    margin-top: 20px;
+    width: 32%;
+    float: left;
+    margin-right: 1.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#wrapa .bo .imga {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#wrapa .bo .monb {
+    float: right;
+    margin-right: 0;
+}
+#wrapa .mon2 {
+    margin-top: 20px;
+    width: 32%;
+    float: left;
+    border: 1px solid white;
+    margin-right: 1.5em;
+    border-radius: 5px;
+}
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: bisque;
+}
+.footer1 {
+    padding-top: 1.7em;
+    padding-bottom: 2em;
+    line-height: 25px;
+    padding-left: 6em;
+}
